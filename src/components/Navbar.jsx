@@ -4,9 +4,9 @@ import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { useStateProvider } from "../utils/StateProvider";
 
-export default function Navbar() {
+export default function Navbar({navBackground}) {
     const [{ userInfo }] = useStateProvider();
-    return <Container>
+    return <Container navBackground={navBackground}>
         <div className="searchbar">
             <FaSearch />
             <input type="text" placeholder="What do you want to listen to?"></input>
@@ -31,7 +31,8 @@ const Container = styled.div`
     position: sticky;
     top: 0;
     transition: 0.3s ease-in-out;
-    background-color: none;
+    background-color: ${({ navBackground }) =>
+    navBackground ? "rgba(0,0,0,0.7)" : "none"};
     .searchbar {
         background-color: white;
         width: 30%;

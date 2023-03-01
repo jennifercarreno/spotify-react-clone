@@ -5,7 +5,7 @@ import { useStateProvider } from "../utils/StateProvider";
 import axios from "axios";
 import { reducerCases } from "../utils/Constants";
 
-export default function Body() {
+export default function Body({headerBackground}) {
     const [{ token, selectedPlaylistId, selectedPlaylist }, dispatch] = useStateProvider();
     useEffect(() => {
         const getInitialPlaylist = async () => {
@@ -45,7 +45,7 @@ export default function Body() {
         return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
       };
 
-    return <Container>
+    return <Container headerBackground={headerBackground}>
         {
             selectedPlaylist && (
                 <>
