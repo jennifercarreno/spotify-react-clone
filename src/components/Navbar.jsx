@@ -27,12 +27,12 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    height: 15vh;
+    height: 10vh;
     position: sticky;
     top: 0;
     transition: 0.3s ease-in-out;
     background-color: ${({ navBackground }) =>
-    navBackground ? "rgba(0,0,0,0.7)" : "none"};
+    navBackground ? "rgb(47,8,29)" : "none"};
     .searchbar {
         background-color: white;
         width: 30%;

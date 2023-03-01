@@ -148,11 +148,12 @@ const Container = styled.div`
       margin: 1rem 0 0 0;
       color: #dddcdc;
       position: sticky;
-      top: 15vh;
+      top: 10vh;
       padding: 1rem 3rem;
       transition: 0.3s ease-in-out;
       background-color: ${({ headerBackground }) =>
-        headerBackground ? "#000000dc" : "none"};
+        headerBackground ? "#181818"
+        : "none"};
     }
     .tracks {
       margin: 0 2rem;

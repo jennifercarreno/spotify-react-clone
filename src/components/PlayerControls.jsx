@@ -46,6 +46,6 @@ const Container = styled.div`
   .previous,
   .next,
   .state {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 `;
