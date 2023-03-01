@@ -33,7 +33,6 @@ export default function Body({headerBackground}) {
                   track_number: track.track_number,
                 })),
             }
-            console.log(selectedPlaylist);
             dispatch({ type: reducerCases.SET_PLAYLIST, selectedPlaylist });
         }
         getInitialPlaylist();
